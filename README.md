@@ -69,5 +69,3 @@ numpy
 xgboost
 scikit-learn
 ```
-
-## Purpose
