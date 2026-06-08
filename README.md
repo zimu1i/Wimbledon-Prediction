@@ -2,6 +2,18 @@
 
 Machine learning system to predict the winner of the 2026 Wimbledon Championships for both the Men's (ATP) and Women's (WTA) draws using historical match data, ELO ratings, XGBoost with isotonic calibration, and SHAP-based feature analysis.
 
+## Key findings
+
+- **Grass-specific features drive 47% of predictive signal.** SHAP analysis on the 2024–2025 grass holdout shows that 3-year grass win rate (mean |SHAP| = 0.343), break-point save rate (0.227), and ace rate (0.154) collectively explain nearly half the model's decisions — capturing players who structurally outperform their ATP ranking on this surface (e.g. Rybakina, Djokovic at his peak).
+
+- **ATP ranking alone achieves 65.6% accuracy on grass; the full model reaches 71.5% — a +5.8pp lift (+8.7pp AUC).** ELO accounts for +3.0pp of that gain over raw ranking; the remaining +2.8pp comes from surface-specific serve stats, Grand Slam win rate, and isotonic probability calibration.
+
+- **79% of high-confidence wrong predictions are genuine rank upsets.** Among the 48 matches where the model predicted ≥70% probability but was wrong, 38 (79%) involved a player ranked 80+ positions lower winning. The model's systematic blind spot is extreme underdog victories — cases where grass-court variance overwhelms every measurable signal.
+
+*Full analysis with charts in [`notebooks/analysis.ipynb`](notebooks/analysis.ipynb) · Design decisions in [`METHODOLOGY.md`](METHODOLOGY.md)*
+
+---
+
 ## Quick start
 
 ```bash
