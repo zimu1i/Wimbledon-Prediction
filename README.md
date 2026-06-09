@@ -31,13 +31,26 @@ jupyter notebook notebooks/analysis.ipynb
 
 ## Results (as of June 2026)
 
+### ⚠️ Alcaraz withdrawal — draw updated
+
+Carlos Alcaraz (ESP, World No. 2) has announced he will not compete at Wimbledon 2026 due to health issues. Alcaraz was the pre-tournament favourite at **33.1%** win probability in the original model — the single largest share of any player.
+
+His withdrawal significantly reshuffles the draw:
+
+| | Original favourite | Updated (Alcaraz out) |
+|---|---|---|
+| **Winner** | Carlos Alcaraz (ESP) — 33.1% | Jannik Sinner (ITA) — 28.0% |
+| **Runner-up** | Jannik Sinner (ITA) — 22.1% | Novak Djokovic (SRB) — 24.6% |
+
+With Alcaraz's ~33% probability redistributed, **Sinner and Djokovic** absorb the bulk — Sinner by virtue of the highest remaining ELO and Grand Slam win rate, Djokovic from accumulated grass ELO across his six Wimbledon titles. Zverev climbs from 9.2% to 15.3%, and Taylor Fritz enters the top 4 for the first time.
+
 **Men's (ATP)**
 | Rank | Player | Country | Win % |
 |------|--------|---------|-------|
-| 1 | Carlos Alcaraz | ESP | 33.1% |
-| 2 | Jannik Sinner | ITA | 22.1% |
-| 3 | Novak Djokovic | SRB | 19.3% |
-| 4 | Alexander Zverev | GER | 9.2% |
+| 1 | Jannik Sinner | ITA | 28.0% |
+| 2 | Novak Djokovic | SRB | 24.6% |
+| 3 | Alexander Zverev | GER | 15.3% |
+| 4 | Taylor Fritz | USA | 4.5% |
 
 **Women's (WTA)**
 | Rank | Player | Country | Win % |
